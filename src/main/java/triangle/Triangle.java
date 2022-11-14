@@ -11,6 +11,7 @@ public class Triangle {
 
     /**
      * Constuctor (without error checking)
+     * 
      * @param s1 length of the side1 as an integer.
      * @param s2 length of the side2 as an integer.
      * @param s3 length of the side3 as an integer.
@@ -23,6 +24,7 @@ public class Triangle {
 
     /**
      * Sets the lenghts of the sides of this triangle.
+     * 
      * @param s1 length of the side1
      * @param s2 length of the side2
      * @param s3 length of the side3
@@ -37,6 +39,7 @@ public class Triangle {
 
     /**
      * Gets the side lenghts.
+     * 
      * @return a comma separated list of side lengths
      */
     public String getSideLengths() {
@@ -49,6 +52,7 @@ public class Triangle {
 
     /**
      * Gets the area of the triangle.
+     * 
      * @return area of the triangle, -1.0 if triangle is impossible.
      */
     public double getArea() {
@@ -72,8 +76,9 @@ public class Triangle {
      * <li>impossible - if the lengths can't form a triangle
      * </ul>
      * @return type of the triangle as a string.
+     * @throws NotValidInput
      */
-    public String classify() {
+    public String classify(){
         if (isImpossible()) {
             return P_IMPOSSIBLE;
         }
@@ -92,8 +97,9 @@ public class Triangle {
 
     /**
      * Checks if the triangle is isosceles. Note: isosceles triangle may
-     also
+     * also
      * be equilateral and right-angled.
+     * 
      * @return true if two sides hahave equal length
      */
     public boolean isIsosceles() {
@@ -105,6 +111,7 @@ public class Triangle {
 
     /**
      * Checks if the triangle is equilateral.
+     * 
      * @return true if all three sides have equal length.
      */
     public boolean isEquilateral() {
@@ -116,25 +123,26 @@ public class Triangle {
 
     /**
      * Checks if the triangle is right-angled. Note: right-angled triangle
-     may
+     * may
      * also be isosceles.
+     * 
      * @return true if one angle is a right angle, otherwise false.
-     * alterei este metodo...
+     *         alterei este metodo...
      */
     public boolean isRightAngled() {
-        int[] sides = new int[]{side1, side2, side3};
-        if(this.side1*this.side1==(this.side2*this.side2)+(this.side3*this.side3)){
+        int[] sides = new int[] { side1, side2, side3 };
+        if (this.side1 * this.side1 == (this.side2 * this.side2) + (this.side3 * this.side3)) {
             return true;
 
-        }else{
+        } else {
             return false;
         }
-
 
     }
 
     /**
      * Checks if the triangle is scalene.
+     * 
      * @return true if all sides different lengths, no right angles.
      */
     public boolean isScalene() {
@@ -147,6 +155,7 @@ public class Triangle {
     /**
      * Checks whether the given side lengths form a
      * valid triangle.
+     * 
      * @return true if the given side lenghts do not form a triangle.
      */
     public boolean isImpossible() {
@@ -157,4 +166,3 @@ public class Triangle {
     }
 
 }
-
