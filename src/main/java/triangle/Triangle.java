@@ -1,5 +1,9 @@
 package triangle;
 
+/**
+ * A class of triangle objects
+ */
+
 public class Triangle {
 
     private int side1, side2, side3;
@@ -43,6 +47,11 @@ public class Triangle {
         return side1 + "," + side2 + "," + side3;
     }
 
+    /**
+     * Gets the triangle's perimeter
+     * @return triangle's perimeter
+     */
+    
     public int getPerimeter() {
         return side1 + side2 + side3;
     }
