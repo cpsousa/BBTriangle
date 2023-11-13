@@ -10,7 +10,6 @@ plugins {
 }
 
 repositories {
-    // Use Maven Central for resolving dependencies.
     mavenCentral()
 }
 
@@ -19,9 +18,23 @@ dependencies{
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
+jar{
+    manifest{
+        attributes 'Specification-Title':'Exer Joda Time - Eng. Software'
+        attributes 'Specification-Version':'1.0'
+        attributes 'Specification-Vendor':'ESTG'
+        attributes 'Implementation-Title':'exerJoda.WorldTime'
+        attributes 'Implementation-Version':'build01'
+        attributes 'Implementation-Vendor':'ESTG'
+        attributes 'Main-Class':'exerJoda.WorldTime'
+    }
+}
+
 test{
     useJUnitPlatform()
     testLogging{
         events "passed", "skipped", "failed", "standardOut", "standardError"
     }
 }
+
+build.finalizedBy javadoc
