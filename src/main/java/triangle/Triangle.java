@@ -155,7 +155,5 @@ public class Triangle {
         }
         return false;
     }
-
-    //teste
 }
 

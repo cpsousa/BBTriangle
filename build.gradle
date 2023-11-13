@@ -4,3 +4,24 @@
  * This is a general purpose Gradle build.
  * To learn more about Gradle by exploring our Samples at https://docs.gradle.org/8.4/samples
  */
+
+plugins {
+    id 'java'
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies{
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.3'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test{
+    useJUnitPlatform()
+    testLogging{
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+    }
+}
