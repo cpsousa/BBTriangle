@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: Exer Joda Time - Eng. Software
+Specification-Version: 1.0
+Specification-Vendor: ESTG
+Implementation-Title: exerJoda.WorldTime
+Implementation-Version: build01
+Implementation-Vendor: ESTG
+Main-Class: exerJoda.WorldTime
+

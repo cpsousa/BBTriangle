@@ -1,0 +1,7 @@
+-classpath 'C:\\Users\\ricar\\OneDrive\\Desktop\\Faculdade\\2023_2024\\ESII\\BBTriangle\\build\\classes\\java\\main;C:\\Users\\ricar\\OneDrive\\Desktop\\Faculdade\\2023_2024\\ESII\\BBTriangle\\build\\resources\\main'
+-d 'C:\\Users\\ricar\\OneDrive\\Desktop\\Faculdade\\2023_2024\\ESII\\BBTriangle\\build\\docs\\javadoc'
+-doctitle 'BBTriangle API'
+-notimestamp 
+-quiet 
+-windowtitle 'BBTriangle API'
+'C:\\Users\\ricar\\OneDrive\\Desktop\\Faculdade\\2023_2024\\ESII\\BBTriangle\\src\\main\\java\\triangle\\Triangle.java'
